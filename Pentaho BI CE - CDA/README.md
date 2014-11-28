@@ -20,6 +20,8 @@ Method Supported: doQuery, listQueries, getCdaList, listParameters, clearCache, 
 
 Pentaho CDA also provides web interface for showing the query results: $BASE_URL/pentaho/plugin/cda/api/previewQuery
 
+Example: $BASE_URL/pentaho/plugin/cda/api/previewQuery?path=public/plugin-samples/cda/cdafiles/service-sql-jdbc.cda
+
 
 ## How to Emulate
 
