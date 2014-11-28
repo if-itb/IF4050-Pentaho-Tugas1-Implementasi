@@ -17,7 +17,7 @@ By:
 
 ## How to Run
 
-[Description Here]
+Please access ```README.md``` in each directories
 
 
 ## Additional Information

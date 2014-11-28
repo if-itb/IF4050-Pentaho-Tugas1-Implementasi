@@ -21,6 +21,17 @@ Method Supported: doQuery, listQueries, getCdaList, listParameters, clearCache, 
 Pentaho CDA also provides web interface for showing the query results: $BASE_URL/pentaho/plugin/cda/api/previewQuery
 
 
+## How to Emulate
+
+1. At first, upload ```data/service-sql-jdbc.cda``` to ```public/plugin-samples/cda/cdafiles/```
+
+2. ```main.py``` will check all CDA files list. Also, this driver will perform several operations for ```service-sql-jdbc.cda```: listQueries, listParameters, doQuery.
+
+
+## Additional Notes
+
+The ```sales_data_sample.csv``` is taken from Pentaho BI CE sample data.
+
 ---
 
 Last Updated: November 28, 2014
