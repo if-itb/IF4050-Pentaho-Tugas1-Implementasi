@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDADescriptor>
+   <DataSources>
+      <Connection id="get_all_years" type="sql.jndi">
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="get_top_customers" type="sql.jndi">
+         <Jndi>SampleData</Jndi>
+      </Connection>
+      <Connection id="get_top_products" type="sql.jndi">
+         <Jndi>SampleData</Jndi>
+      </Connection>
+   </DataSources>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="get_all_years"
+               id="get_all_years"
+               type="sql">
+      <Columns/>
+      <Parameters/>
+      <Query>SELECT DISTINCT YEAR_ID as YEAR FROM ORDERFACT ORDER BY YEAR_ID</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600"
+               connection="get_top_customers"
+               id="get_top_customers"
+               type="sql">
+      <Columns/>
+      <Parameters>
+         <Parameter default="2004" name="year" type="Integer"/>
+      </Parameters>
+      <Query>SELECT
+    'Revenue' AS SERIES,
+    CUSTOMERNAME,
+    SUM(ORDERFACT.TOTALPRICE) AS REVENUE
+FROM
+    ORDERFACT
+    INNER JOIN CUSTOMERS ON CUSTOMERS.CUSTOMERNUMBER = ORDERFACT.CUSTOMERNUMBER
+WHERE
+    YEAR_ID = ${year}
+GROUP BY
+    SERIES, CUSTOMERNAME
+ORDER BY
+    REVENUE DESC LIMIT 5</Query>
+   </DataAccess>
+   <DataAccess access="public" cache="true" cacheDuration="3600" connection="get_top_products"
+               id="get_top_products"
+               type="sql">
+      <Columns/>
+      <Parameters>
+         <Parameter default="2004" name="year" type="Integer"/>
+      </Parameters>
+      <Query>SELECT * FROM
+(
+SELECT
+    'Revenue' AS SERIES,
+    PRODUCTLINE,
+    SUM(ORDERFACT.TOTALPRICE) AS REVENUE
+ 
+FROM ORDERFACT
+    INNER JOIN PRODUCTS ON PRODUCTS.PRODUCTCODE = ORDERFACT.PRODUCTCODE
+WHERE
+    YEAR_ID = ${year}
+GROUP BY
+    SERIES, PRODUCTLINE
+ORDER BY
+    REVENUE DESC LIMIT 5
+)
+ORDER BY REVENUE ASC</Query>
+   </DataAccess>
+</CDADescriptor>

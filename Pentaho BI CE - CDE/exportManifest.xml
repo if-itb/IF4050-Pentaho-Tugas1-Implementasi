@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:ExportManifest xmlns:ns2="http://www.pentaho.com/schema/">
+    <ExportManifestInformation exportDate="02-12-2014 07:32:32 ICT" exportBy="admin" rootFolder="/home/" manifestVersion="2"/>
+    <ExportManifestEntity path="services-cde">
+        <ExportManifestProperty>
+            <EntityMetaData name="services-cde" createdDate="2014-12-02T17:23:23.291+07:00" isFolder="true" path="services-cde" isHidden="false" locale="en_US" title="services-cde"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="services-cde/cde dashboard.cda">
+        <ExportManifestProperty>
+            <EntityMetaData name="cde dashboard.cda" createdDate="2014-12-02T18:16:45.851+07:00" isFolder="false" path="services-cde/cde dashboard.cda" isHidden="false" locale="en_US" title="cde dashboard.cda"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="services-cde/cde dashboard.cdfde">
+        <ExportManifestProperty>
+            <EntityMetaData name="cde dashboard.cdfde" createdDate="2014-12-02T17:24:17.503+07:00" isFolder="false" path="services-cde/cde dashboard.cdfde" isHidden="false" locale="en_US" title="cde dashboard.cdfde"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="services-cde/cde dashboard.wcdf">
+        <ExportManifestProperty>
+            <EntityMetaData name="cde dashboard.wcdf" createdDate="2014-12-02T17:24:17.464+07:00" isFolder="false" path="services-cde/cde dashboard.wcdf" isHidden="false" locale="en_US" description="cde dashboard" title="cde dashboard"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+    <ExportManifestEntity path="services-cde/styles.css">
+        <ExportManifestProperty>
+            <EntityMetaData name="styles.css" createdDate="2014-12-02T17:25:20.011+07:00" isFolder="false" path="services-cde/styles.css" isHidden="false" locale="en_US" title="styles.css"/>
+        </ExportManifestProperty>
+        <ExportManifestProperty>
+            <EntityAcl>
+                <entriesInheriting>true</entriesInheriting>
+                <owner>admin</owner>
+                <ownerType>USER</ownerType>
+            </EntityAcl>
+        </ExportManifestProperty>
+    </ExportManifestEntity>
+</ns2:ExportManifest>
