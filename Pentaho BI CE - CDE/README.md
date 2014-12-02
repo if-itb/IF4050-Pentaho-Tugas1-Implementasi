@@ -13,8 +13,11 @@ Community Dashboard Editor (CDE) is the Dashboard editor created and used everyd
 CDE was born to simplify the CTools Dashboards' creation, edition and rendering processes, and it's a very powerful and complete tool, combining front end with data sources and custom components in a seamless way.
 
 CDE has three perspectives :
+
 1. Layout : Designing the layout of your dashboard such as the ```styles (css)``` and the positioning of the ```layout (html)```.
+
 2. Components : Add and set up the different components that make up your dashboard: ```Visual Components (textboxes, tables, charts, etc.)```, ```Parameters``` and ```Scripts```.
+
 3. Datasources : Define the ```data sources``` used by the components (sql, cda, olap4j, etc).
 
 
