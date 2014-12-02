@@ -23,14 +23,15 @@ All of the operations above can be configured, designed, controlled, and ran in 
 ## How to Emulate (in this example)
 1. First you need to prepare your input files, in this case, ```Files/sample_data.csv```
 2. You can proceed in two ways :
-	a. Using Kitchen
-	   Open cmd (or terminal) with root(or administrator) authorization. Run following command :
+- Using Kitchen
+
+		Open cmd (or terminal) with root(or administrator) authorization. Run following command :
 	   
 	   ```kitchen /file <.kjb file full path> <input_file> /norep```
 	   
 	   for this example, the <.kjb file full path> = ```Transformation and Job\KettleHello.kjb```
 							 <input_file> = sample_data //(without csv)
-	b. Using Spoon
+- Using Spoon
 	   Open Spoon.bat (or Spoon.sh) at your Pentaho DI installation folder, and it will open the Spoon graphical UI. Click File->Open->Find and Choose your .kjb file->Open. It will show the graphical representations of the Jobs and transformations on the example. Finally, click Action->Run or click the run toolbar. Finally click Launch
 	   
 The resulted file is the sample_data_greetings.xml at ```Files```. You can delete it and see if the system works and created the same file again. 
