@@ -37,7 +37,7 @@ All of the operations above can be configured, designed, controlled, and ran in 
 	   
 The resulted file is the sample_data_greetings.xml at ```Files```. You can delete it and see if the system works and created the same file again. 
 
-## Addtional Notes
+## Additional Notes
 More tutorial and info on http://wiki.pentaho.com/display/EAI/Pentaho+Data+Integration+%28Kettle%29+Tutorial
 
 ---
