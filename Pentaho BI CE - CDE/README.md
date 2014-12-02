@@ -8,32 +8,29 @@
 
 ## Description
 
-CDA uses two different components: the ```connection``` (database / Pentaho datasource) and the ```dataAccess``` (a query over the connection)
+Community Dashboard Editor (CDE) is the Dashboard editor created and used everyday by the Webdetails team. With CDE, you can start building your own CTools Dashboards in a fast and effective way.
 
-There are several supported ```connection``` types such as metadata.metadata, sql.jdbc, sql.jndi, mondrian.jdbc, mondrian.jndi, olap4j.jdbc, olap4j.jndi, scripting.scripting, kettle.TransFromFile, and xPath.xPath.
+CDE was born to simplify the CTools Dashboards' creation, edition and rendering processes, and it's a very powerful and complete tool, combining front end with data sources and custom components in a seamless way.
 
-On the other hand, there are several supported ```dataAccess``` types such as SQL, MDX, Metadata, Kettle, etc.
-
-Service Endpoint: $BASE_URL/pentaho/plugin/cda/api/
-
-Method Supported: doQuery, listQueries, getCdaList, listParameters, clearCache, listDataAccessTypes
-
-Pentaho CDA also provides web interface for showing the query results: $BASE_URL/pentaho/plugin/cda/api/previewQuery
-
-Example: $BASE_URL/pentaho/plugin/cda/api/previewQuery?path=public/plugin-samples/cda/cdafiles/service-sql-jdbc.cda
+CDE has three perspectives :
+1. Layout : Designing the layout of your dashboard such as the ```styles (css)``` and the positioning of the ```layout (html)```.
+2. Components : Add and set up the different components that make up your dashboard: ```Visual Components (textboxes, tables, charts, etc.)```, ```Parameters``` and ```Scripts```.
+3. Datasources : Define the ```data sources``` used by the components (sql, cda, olap4j, etc).
 
 
-## How to Emulate
+## How to Preview
 
-1. At first, upload ```data/service-sql-jdbc.cda``` to ```public/plugin-samples/cda/cdafiles/```
+1. At first, open ```localhost:8080/pentaho``` and input your ```username``` and ```password```.
 
-2. ```main.py``` will check all CDA files list. Also, this driver will perform several operations for ```service-sql-jdbc.cda```: listQueries, listParameters, doQuery.
+2. After that, go to the ```browse files``` and upload all of files in ```Pentaho BI CE - CDE``` folder.
+
+3. Then, ```File -> Open -> Cde Dashboard``` and you will see the example dashboard that created using the CDE.
 
 
 ## Additional Notes
 
-The ```sales_data_sample.csv``` is taken from Pentaho BI CE sample data.
+The ```data``` is taken from Pentaho BI CE sample data.
 
 ---
 
-Last Updated: November 28, 2014
+Last Updated: December 2, 2014
