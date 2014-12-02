@@ -25,12 +25,13 @@ All of the operations above can be configured, designed, controlled, and ran in 
 2. You can proceed in two ways :
 - Using Kitchen
 
-		Open cmd (or terminal) with root(or administrator) authorization. Run following command :
+	Open cmd (or terminal) with root(or administrator) authorization. Run following command :
 	   
 	   ```kitchen /file <.kjb file full path> <input_file> /norep```
 	   
-	   for this example, the <.kjb file full path> = ```Transformation and Job\KettleHello.kjb```
-							 <input_file> = sample_data //(without csv)
+	 for this example:
+- the <.kjb file full path> = ```Transformation and Job\KettleHello.kjb```
+- <input_file> = sample_data //(without csv)
 - Using Spoon
 	   Open Spoon.bat (or Spoon.sh) at your Pentaho DI installation folder, and it will open the Spoon graphical UI. Click File->Open->Find and Choose your .kjb file->Open. It will show the graphical representations of the Jobs and transformations on the example. Finally, click Action->Run or click the run toolbar. Finally click Launch
 	   
